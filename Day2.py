@@ -12,6 +12,14 @@
 # print("The sum of the digits  is: ",(ones_place+tens_place))
 
 # Challange 2 BMI Calculator
-height = float(input("What is your height in m: "))
-weight = float(input("What is your weight in kg: "))
-print("Your BMI: ",int(weight/height**2))
+# height = float(input("What is your height in m: "))
+# weight = float(input("What is your weight in kg: "))
+# print("Your BMI: ",int(weight/height**2))
+
+# Challange 3 Calculate number of weeks left in your life
+age = int(input("What is your age? "))
+years_left = 90-age
+months_left = years_left*12
+weeks_left = years_left*52
+days_left = years_left*365
+print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
