@@ -17,9 +17,18 @@
 # print("Your BMI: ",int(weight/height**2))
 
 # Challange 3 Calculate number of weeks left in your life
-age = int(input("What is your age? "))
-years_left = 90-age
-months_left = years_left*12
-weeks_left = years_left*52
-days_left = years_left*365
-print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
+# age = int(input("What is your age? "))
+# years_left = 90-age
+# months_left = years_left*12
+# weeks_left = years_left*52
+# days_left = years_left*365
+# print(f"You have {days_left} days, {weeks_left} weeks, and {months_left} months left.")
+
+# Day 2 Project tip calculator
+print("Welcome  to the tip calculator.")
+total_bill = float(input("What was the total bill? $"))
+tip_percent = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
+number_of_persons = int(input("How many people to split the bill? "))
+individual_bill = total_bill/number_of_persons
+tip_bill = round(individual_bill*((tip_percent+100)/100),2)
+print(f"Each person should pay: ${tip_bill}")
