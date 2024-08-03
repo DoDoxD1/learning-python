@@ -17,7 +17,14 @@
 # print(max_marks)
 
 # Challange 3 calculate sum of even numbers from 1to100
-sum = 0
-for n in range(2,101,2):
-    sum += n
-print(sum)
+# sum = 0
+# for n in range(2,101,2):
+#     sum += n
+# print(sum)
+
+# Challange 4 fizzbzz from 1to100
+for n in range(1,101):
+    if(n%15==0): print("FizzBuzz")
+    elif(n%3==0): print("Fizz")
+    elif(n%5==0): print("Buzz")
+    else: print(n)
